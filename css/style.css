@@ -1,4 +1,38 @@
 
+/* Alex's Code */
+
+body {
+	background-color: black;
+}
+
+ul.thumbnails {
+	color: white;
+}
+
+
+
+
+
+
+
+
+div.hero-unit{
+	padding-top: 30px;
+	padding-bottom: 270px;
+}
+
+
+div.hero-unit h1{
+	font-size: 110px;
+}
+
+ul.thumbnails h2, ul.thumbnails p {
+	padding-left: 5px;
+}
+
+form {
+	padding-top: 20px;
+}
 
 
 
