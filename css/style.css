@@ -5,21 +5,51 @@ body {
 	background-color: black;
 }
 
-ul.thumbnails {
-	color: white;
+/*-make bg image separate layer
+	-make black overlay 
+	-put content on top
+*/
+
+div.bg-img {
+	position: absolute;
+	z-index: 10;
+
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-image: url("../img/photos/kitchen3.jpg");
+	background-size: cover;
+	background-position: center center;
 }
 
+div.black-overlay {
+	position: absolute;
+	z-index: 20;
 
-
-
-
-
-
+	opacity: .3;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+}
 
 div.hero-unit{
 	padding-top: 30px;
 	padding-bottom: 270px;
+	position: relative;
 }
+
+/* Set all text content on top of other divs */
+#text-content {
+	z-index: 9999;
+	position: relative;
+
+	color: white;
+}
+/* end */
+
 
 
 div.hero-unit h1{
@@ -34,9 +64,13 @@ form {
 	padding-top: 20px;
 }
 
+ul.thumbnails {
+	color: white;
+}
+/* 
 
 
-/* Collin Code 
+/* Collin's Code 
 
 div.hero-unit{
 	padding-top: 30px;
