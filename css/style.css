@@ -5,25 +5,74 @@ body {
 	background-color: black;
 }
 
-ul.thumbnails {
-	color: white;
+/*-make bg image separate layer
+	-make black overlay 
+	-put content on top
+*/
+
+div.bg-img {
+	position: absolute;
+	z-index: 10;
+
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background-image: url("../img/photos/kitchen3.jpg");
+	background-size: cover;
+	background-position: center center;
 }
 
+div.black-overlay {
+	position: absolute;
+	z-index: 20;
 
-
-
-
-
-
+	opacity: .3;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+}
 
 div.hero-unit{
 	padding-top: 30px;
 	padding-bottom: 270px;
+	position: relative;
 }
 
+/* Set all text content on top of other divs */
+#text-content {
+	z-index: 9999;
+	position: relative;
+
+	color: white;
+}
+/* end */
 
 div.hero-unit h1{
 	font-size: 110px;
+}
+/*
+.hero-unit:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}*/
+
+.triangle {
+	z-index: 9999;
+	width: 0;
+	height: 0;
+	border-bottom: 75px solid #000;
+	border-right: 75px solid #bbb;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  -webkit-box-shadow: 7px 90px 70px 80px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
 }
 
 ul.thumbnails h2, ul.thumbnails p {
@@ -34,9 +83,13 @@ form {
 	padding-top: 20px;
 }
 
+ul.thumbnails {
+	color: white;
+}
+/* 
 
 
-/* Collin Code 
+/* Collin's Code 
 
 div.hero-unit{
 	padding-top: 30px;

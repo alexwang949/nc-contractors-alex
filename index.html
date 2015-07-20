@@ -32,33 +32,39 @@
 
     <body>
       <div class="container">
-
         <!-- start hero div -->
         <div class="hero-unit">
-
-          <h1>N & C Contractors</h1>
-
-          <div class="span4">
-          <h2><em>of Northern Virginia</em></h2>
-          <p>Experts in bathrooms, kitchens, and additions.  For a <strong>free estimate</strong> call us at <strong>703-731-6590</strong> or email <strong>sales@nandccontractors.com</strong></p>
-<!-- Contact Form Start -->
+              <div class="bg-img">
+              </div>
+              <div class="black-overlay">
+              </div>
+              <!-- #text-content corrects z-index of all text to sit on top of previous divs -->
+              <div id="text-content">
+                  <h1>N & C Contractors</h1>
+                  <div class="span4">
+                      <h2><em>of Northern Virginia</em></h2>
+                      <p>Experts in bathrooms, kitchens, and additions.  For a <strong>free estimate</strong> call us at <strong>703-731-6590</strong> or email <strong>sales@nandccontractors.com</strong></p>
+                  </div>
+        <!-- Contact Form Start -->
+                  <div class="span3 offset3 pull-right">
+                    <form method="post" action="process.php">
+                     <fieldset>
+                       <legend>Email us for a free estimate!</legend>
+                       <input type="text" placeholder="Name" value="" id="name" name="name">
+                       <input type="email" placeholder="Email Address" value ="" id="email" name="email">
+                       <textarea id="message" name="message"></textarea>
+                       <!-- <button type="submit" class="btn">Submit</button> -->
+                       <input type="submit" value="Submit" class="btn" />
+                     </fieldset>
+                    </form>
+                  </div>
+           <!-- Contact Form End -->
+              </div>
+              <div class="triangle">
+              </div>
         </div>
-        <div class="span3 offset3 pull-right">
-          <form method="post" action="process.php">
-           <fieldset>
-             <legend>Email us for a free estimate!</legend>
-             <input type="text" placeholder="Name" value="" id="name" name="name">
-             <input type="email" placeholder="Email Address" value ="" id="email" name="email">
-             <textarea id="message" name="message"></textarea>
-             <!-- <button type="submit" class="btn">Submit</button> -->
-             <input type="submit" value="Submit" class="btn" />
-           </fieldset>
-          </form>
-<!-- Contact Form End -->
 
-        </div>
-          <!-- <p><a href="#" class="btn btn-primary btn-large">learn more &raquo;</a></p> -->
-        </div>
+              <!-- <p><a href="#" class="btn btn-primary btn-large">learn more &raquo;</a></p> -->
         <!-- end hero div -->
 
         <!-- start media-grid -->
