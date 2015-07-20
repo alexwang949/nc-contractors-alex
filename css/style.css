@@ -50,10 +50,29 @@ div.hero-unit{
 }
 /* end */
 
-
-
 div.hero-unit h1{
 	font-size: 110px;
+}
+/*
+.hero-unit:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}*/
+
+.triangle {
+	z-index: 9999;
+	width: 0;
+	height: 0;
+	border-bottom: 75px solid #000;
+	border-right: 75px solid #bbb;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+  -webkit-box-shadow: 7px 90px 70px 80px rgba(0,0,0,0.3);
+  -moz-box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
+  box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
 }
 
 ul.thumbnails h2, ul.thumbnails p {
