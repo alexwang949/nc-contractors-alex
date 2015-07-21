@@ -51,11 +51,24 @@ div.hero-unit{
 }
 /* end */
 
+#text-content .span4 h2 {
+	text-shadow: 5px 5px 5px black;
+}
+
 
 div.hero-unit h1{
 	/*font-size: 110px;*/
 	font-size: 6.2em;
-	text-shadow: 5px 5px 10px black;
+	text-shadow: 5px 5px 5px black;
+}
+
+#text-content .span4 p {
+	text-shadow: 5px 5px 20px black;
+}
+
+.experts-italicize {
+	font-style: italic;
+	font-weight: 800;
 }
 /*
 .hero-unit:after {
@@ -79,14 +92,23 @@ div.hero-unit h1{
 	box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
 }
 
+.thumbnails .span4 h2 {
+	text-align: center;
+}
+
 ul.thumbnails h2 {
 	padding-bottom: .5em;
 }
 
-.thumbnails p {
-	padding-top: 2em;
+.thumbnails .span4 p {
+	margin-top: 1.5em;
+	padding: .5em;
+/*	background-color: #404042;
+*/	text-align: center;
 }
-
+/* wrap text inside a container div so that I can
+declare height + width and set a background color 
+to make the text pop out more. */
 
 
 .thumbnails .span4:nth-of-type(1) .thumbnail-image {
@@ -127,6 +149,10 @@ ul.thumbnails h2 {
 
 form {
 	padding-top: 20px;
+}
+
+fieldset legend {
+	color: white;
 }
 
 ul.thumbnails {
