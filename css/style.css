@@ -75,9 +75,14 @@ div.hero-unit h1{
 	box-shadow: 7px 7px 7px rgba(0,0,0,0.3);
 }
 
-ul.thumbnails h2, ul.thumbnails p {
-	padding-left: 5px;
+ul.thumbnails h2 {
+	padding-bottom: .5em;
 }
+
+.thumbnails p {
+	padding-top: 2em;
+}
+
 
 
 .thumbnails .span4:nth-of-type(1) .thumbnail-image {
